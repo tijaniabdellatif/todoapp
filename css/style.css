@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Indie+Flower&display=swap");
+/* Text color */
+/*Base colors*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Gamja Flower", cursive;
+  height: 100vh;
+  padding-top: 3rem;
+  margin: 0;
+  background-color: #F6F4EC; }
+
+.heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  place-items: center; }
+  .heading__title {
+    font-size: 2.4rem;
+    color: #E94703;
+    margin: 2.5rem 1.5rem;
+    transition: all 0.3s linear;
+    cursor: pointer; }
+    .heading__title:hover {
+      transform: scale(2); }
+  .heading__image {
+    display: block;
+    margin: 0.25rem;
+    border: 1px solid black;
+    border-radius: 30px;
+    border-color: #E94703;
+    box-shadow: 0 5px 15px #926C15; }
+    .heading__image--img {
+      width: 100px;
+      height: 100px;
+      transition: all 0.3s linear; }
+      .heading__image--img:hover {
+        transform: scale(2); }
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(233, 71, 3, 0.1);
+  box-shadow: 0 5px 15px #926C15;
+  width: 60%;
+  height: auto;
+  border-radius: 10px; }
+  .form__alert {
+    font-family: "Gamja Flower", cursive;
+    font-size: 3rem; }
+  .form__info {
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+    font-size: 2.4rem; }
+  .form__control {
+    width: 100%;
+    margin: 1rem 1rem; }
+    .form__control--todo {
+      border: none;
+      height: 30px;
+      padding: 1rem 1rem;
+      font-size: 2.2rem;
+      font-family: inherit; }
+      .form__control--todo:focus {
+        color: #E94703; }
+      .form__control--todo::placeholder {
+        padding: 1rem 1rem;
+        color: #B6BDBC; }
+    .form__control--btn {
+      text-transform: uppercase;
+      background: transparent;
+      color: #E94703;
+      padding: 0.4rem 0.8rem;
+      letter-spacing: 0.1rem;
+      transition: all 0.3s linear;
+      font-size: 1.5rem;
+      border: 2px solid #E94703;
+      cursor: pointer;
+      box-shadow: 0 5px 15px #926C15;
+      border-radius: 3px; }
+      .form__control--btn:hover {
+        background-color: #E94703;
+        color: #050505; }
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  visibility: visible; }
+  .list__item {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.5rem 1.5rem;
+    background-color: rgba(233, 71, 3, 0.1);
+    box-shadow: 0 5px 15px #926C15; }
+  .list__action {
+    display: flex;
+    justify-content: space-around;
+    width: 10%; }
+  .list__text {
+    font-size: 2.4rem;
+    padding: 0 1rem; }
+  .list__button {
+    width: 100%;
+    margin: 0.5rem 0.5rem;
+    background: transparent;
+    border: none;
+    color: #E94703;
+    cursor: pointer; }
+    .list__button:hover {
+      color: #25bb32; }
