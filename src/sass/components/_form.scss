@@ -1,0 +1,69 @@
+#main{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(233, 71, 3, 0.1);
+    box-shadow: $dark-shadow;
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+
+    &__alert{
+
+        font-family: $font-primary;
+        font-size: 3rem;
+        
+    }
+
+    &__info{
+
+        text-align: center;
+        font-family: $font-secondary;
+        font-size: 2.4rem;
+    }
+
+    &__control{
+
+        width: 100%;
+        margin:1rem 1rem;
+        
+
+        &--todo{
+
+            border: none;
+            height:30px;
+            padding: 1rem 1rem;
+            font-size: 2.2rem;
+            font-family: inherit;
+            
+            &:focus{
+
+                color:$uiColor;
+               
+            }
+
+            &::placeholder{
+                padding:1rem 1rem; 
+                color:$textColor--secondary;
+            }
+
+         
+        }
+
+        &--btn{
+
+            @include button;
+        }
+    }
+}

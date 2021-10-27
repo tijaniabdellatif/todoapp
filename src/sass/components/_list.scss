@@ -1,0 +1,56 @@
+.list{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    visibility: visible;
+   
+
+    &__item{
+
+        width: 60%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1.5rem 1.5rem;
+        background-color:rgba(233, 71, 3, 0.1);
+        box-shadow: $dark-shadow;
+    }
+
+    &__action{
+
+        display: flex;
+        justify-content: space-around;
+        width:10%;
+    }
+
+    &__text{
+
+        font-size: 2.4rem;
+        padding: 0 1rem;
+    }
+
+  
+
+    &__button{
+
+        width: 100%;
+        margin: 0.5rem 0.5rem;
+        background: transparent;
+        border: none;
+        color:$uiColor;
+        cursor: pointer;
+
+        &:hover{
+
+            color:$clr-green-dark;
+        }
+
+    
+      
+    }
+}
+

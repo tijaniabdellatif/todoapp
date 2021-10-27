@@ -1,0 +1,25 @@
+
+*,
+*::after,
+*::before{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+
+    font-size: $baseFontSize;
+}
+
+
+body{
+
+    font-family: $font-primary;
+    height: 100vh;
+   
+    padding-top:3rem;
+    margin:0;
+    background-color: green;
+}
